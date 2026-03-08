@@ -1,10 +1,5 @@
-age=int(input("enter your age:"))
-if age>=18:
-    print("you are old enough to vote in Finnish parliamentary elections.")
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
 else:
-    remaining_years=age-18
-    print("you are not old enough to vote in Finnish parliamentary elections.")
-    print("you can vote after",remaining_years, "year(s)")
-
-
-
+        print(f"{year} is not a leap year.")
