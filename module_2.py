@@ -1,14 +1,15 @@
+#1
 name = input("Enter your name: ")
 print("Hello,", name+ "!")
 
-
+#2
 import math
 radius = float(input("Enter the radius of the circle: "))
 area = math.pi * radius * radius
 print("The area of the circle is:", area)
 
 
-
+#3
 length = float(input("Enter the length of the circle: "))
 width = float(input("Enter the width of the circle: "))
 area = length * width
@@ -17,7 +18,7 @@ print("The area of the circle is:", area)
 print("The perimeter of the circle is:", perimeter)
 
 
-
+#4
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 num3 = int(input("Enter the third number: "))
@@ -30,7 +31,7 @@ print("The average is:", avarage)
 
 
 
-
+#5
 talents = float(input("Enter talents: "))
 pounds = float(input("Enter pounds: "))
 lots = float(input("Enter lots: "))

@@ -1,3 +1,4 @@
+#1
 length = float(input("Enter the length of the zander in centimeters: "))
 if length < 42:
     difference = 42 - length
@@ -9,7 +10,7 @@ else:
 
 
 
-
+#2
 cabin = input("Enter the cabin class (LUX, A, B, C): ")
 if cabin == "LUX":
     print("Upper-deck cabin with a balcony.")
@@ -25,7 +26,7 @@ else:
 
 
 
-
+#3
 gender = input("Enter biological gender (male/female): ")
 hb = float(input("Enter hemoglobin value (g/l): "))
 if gender == "female":
@@ -42,7 +43,7 @@ else:    print("Invalid gender.")
 
 
 
-
+#4
 year = int(input("Enter a year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(f"{year} is a leap year.")

@@ -1,3 +1,4 @@
+#1
 import random
 num = int(input("How many dice to roll: "))
 total = 0
@@ -7,7 +8,7 @@ for i in range(num):
 print("Sum of the dice:", total)
 
 
-
+#2
 numbers = []
 num = input("Enter a number (empty to quit): ")
 while num != "":
@@ -21,7 +22,7 @@ while i < 5 and i < len(numbers):
     i=i+1
 
 
-
+#3
 num = int(input("Enter an integer: "))
 is_prime = True
 for i in range(2, num):
@@ -34,7 +35,7 @@ else:
     print(num, "is not a prime number")
 
 
-
+#4
 cities = []
 for i in range(5):
     name=input("Enter city name: ")

@@ -1,3 +1,4 @@
+#1
 number = 1
 while number <= 1000:
  if number % 3 == 0:
@@ -5,7 +6,7 @@ while number <= 1000:
  number= number + 1
 
 
-
+#2
 inches = float(input("Enter inches: "))
 while inches >= 0:
     cm = inches * 2.54
@@ -13,7 +14,7 @@ while inches >= 0:
     inches = float(input("Enter inches: "))
 
 
-
+#3
 num = input("Enter a number: ")
 smallest= None
 largest= None
@@ -30,7 +31,7 @@ print("Smallest number:", smallest)
 print("Largest number:", largest)
 
 
-
+#4
 import random
 number = random.randint(1, 10)
 guess = int(input("Guess the number between 1 and 10: "))
@@ -43,7 +44,7 @@ while guess != number:
 print("Correct")
 
 
-
+#5
 username = "python"
 password = "rules"
 attempt = 0
@@ -61,7 +62,7 @@ while attempt <5:
 
 
 
-
+#6
 import random
 N = int(input("How many random points: "))
 count = 0
