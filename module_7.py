@@ -13,3 +13,21 @@ elif month==9 or month==10 or month==11:
 else:
     season="Invalid Month"
 print("Season: ", season)
+
+
+
+#2
+
+names=set()
+name=input("Enter a Name: ")
+while name !="":
+    if name in names:
+        print("Existing Name")
+    else:
+        print("New name")
+        names.add(name)
+    name = input("Enter a Name: ")
+print("Names Entered:")
+for n in names:
+    print(n)
+
