@@ -26,7 +26,7 @@ while name !="":
     else:
         print("New name")
         names.add(name)
-    name = input("Enter a Name: ")
+    name =input("Enter a Name: ")
 print("Names Entered:")
 for n in names:
     print(n)
