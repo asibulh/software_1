@@ -14,8 +14,8 @@ connection= pymysql.connect(
 )
 cursor= connection.cursor()
 icao_code= input("Enter the ICAO code of the airport: ").upper().strip()
-query= "SELECT name, municipality FROM airport WHERE ident = %s"
-cursor.execute(query, (icao_code,))
+sql= "SELECT name, municipality FROM airport WHERE ident = %s"
+cursor.execute(sql, (icao_code,))
 result= cursor.fetchone()
 if result:
     airport_name, town= result
