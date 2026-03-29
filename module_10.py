@@ -25,10 +25,8 @@ class Elevator:
 # Main program
 
 elevator = Elevator(1, 10)
-
 print("Going to floor 5:")
 elevator.go_to_floor(5)
-
 print("Returning to bottom floor:")
 elevator.go_to_floor(1)
 
@@ -74,7 +72,6 @@ class Building:
 # Main program
 
 building = Building(1, 10, 3)
-
 building.run_elevator(0, 7)
 building.run_elevator(1, 3)
 
@@ -124,7 +121,6 @@ class Building:
 # Main program
 
 building = Building(1, 10, 3)
-
 building.run_elevator(0, 8)
 building.run_elevator(1, 5)
 
@@ -188,13 +184,10 @@ for i in range(1, 11):
     cars.append(Car(f"ABC-{i}", random.randint(100, 200)))
 
 race = Race("Grand Demolition Derby", 8000, cars)
-
 hours = 0
-
 while not race.race_finished():
     race.hour_passes()
     hours += 1
-
     if hours % 10 == 0:
         race.print_status()
 
