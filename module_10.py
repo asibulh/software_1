@@ -25,9 +25,10 @@ class Elevator:
 # Main program
 
 elevator = Elevator(1, 10)
-print("Going to floor 5:")
+print("Going to Floor 5:")
 elevator.go_to_floor(5)
-print("Returning to bottom floor:")
+print()
+print("Returning To Bottom Floor: ")
 elevator.go_to_floor(1)
 
 
@@ -66,7 +67,8 @@ class Building:
             self.elevators.append(Elevator(bottom_floor, top_floor))
 
     def run_elevator(self, elevator_number, target_floor):
-        print(f"\nRunning elevator {elevator_number} to floor {target_floor}")
+        print()
+        print(f"Running elevator {elevator_number} to floor {target_floor}")
         self.elevators[elevator_number].go_to_floor(target_floor)
 
 # Main program
@@ -114,7 +116,8 @@ class Building:
         self.elevators[elevator_number].go_to_floor(target_floor)
 
     def fire_alarm(self):
-        print("\n FIRE ALARM! Moving all elevators to bottom floor....")
+        print()
+        print("Fire alarm activated. Moving all elevators to bottom floor.")
         for elevator in self.elevators:
             elevator.go_to_floor(self.bottom_floor)
 
@@ -123,14 +126,12 @@ class Building:
 building = Building(1, 10, 3)
 building.run_elevator(0, 8)
 building.run_elevator(1, 5)
-
 building.fire_alarm()
 
 
 #4
 
 import random
-
 class Car:
     def __init__(self, reg, max_speed):
         self.registration_number = reg
@@ -163,9 +164,10 @@ class Race:
             car.drive(1)
 
     def print_status(self):
-        print(f"\nRace: {self.name}")
+        print()
+        print(f"Race: {self.name}")
         print(f"{'Reg No':<10} {'Speed':<10} {'Distance':<15}")
-        print("-" * 40)
+        print()
 
         for car in self.cars:
             print(f"{car.registration_number:<10} "
@@ -179,6 +181,7 @@ class Race:
         return False
 
 # Main program
+
 cars = []
 for i in range(1, 11):
     cars.append(Car(f"ABC-{i}", random.randint(100, 200)))
@@ -188,8 +191,9 @@ hours = 0
 while not race.race_finished():
     race.hour_passes()
     hours += 1
+
     if hours % 10 == 0:
         race.print_status()
-
-print("\n Final Result")
+print()
+print("Final Result")
 race.print_status()
